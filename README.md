@@ -8,7 +8,7 @@
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/Test-Project-Repository.git
+git clone https://github.com/Gamarques/Test-Project-Repository.git
 cd Test-Project-Repository
 ```
 
