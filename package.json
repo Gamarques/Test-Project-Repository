@@ -1,0 +1,15 @@
+{
+    "name": "test-project-repository",
+    "version": "1.0.0",
+    "description": "A fullstack project with backend and frontend",
+    "scripts": {
+        "install:all": "bun install && cd backend && bun install && cd ../frontend && bun install",
+        "dev": "concurrently -n \"backend,frontend\" -c \"blue,green\" \"cd backend && bun run dev\" \"cd frontend && bun run dev\"",
+        "build": "cd frontend && bun run build",
+        "start": "concurrently -n \"backend,frontend\" -c \"blue,green\" \"cd backend && bun run start\" \"cd frontend && bun run preview\""
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "concurrently": "^9.2.0"
+    }
+}
